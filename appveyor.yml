@@ -7,7 +7,7 @@ platform:
 environment:
   machine_user: test_user
   machine_pass: Pass@word1
-  SSL_CERT_FILE: c:\projects\chocolatey-cookbook\certs.pem
+  SSL_CERT_FILE: c:\projects\kitchen-machine\certs.pem
 
   matrix:
     - ruby_version: "21"
@@ -26,7 +26,7 @@ install:
   - ps: ruby --version
   - ps: gem --version
   - ps: gem install bundler --quiet --no-ri --no-rdoc
-  - ps: Invoke-WebRequest -Uri http://curl.haxx.se/ca/cacert.pem -OutFile c:\projects\chocolatey-cookbook\certs.pem
+  - ps: Invoke-WebRequest -Uri http://curl.haxx.se/ca/cacert.pem -OutFile c:\projects\kitchen-machine\certs.pem
   - ps: bundler --version
 
 build_script:
