@@ -1,0 +1,6 @@
+name 'machine_test'
+maintainer 'Maintainer'
+maintainer_email 'Maintainer@example.com'
+license 'Apache 2.0'
+description 'Used to test the kitchen-machine driver'
+version '0.1.0'

@@ -52,6 +52,7 @@ module Kitchen
       # @param state [Hash] mutable instance state
       # @raise [ActionFailed] if the action could not be completed
       def destroy(state)
+        return if state[:hostname].nil?
         instance.transport.connection(state).close
         state.delete(:hostname)
       end
