@@ -67,7 +67,7 @@ module Kitchen
         state[:hostname] = config[:hostname]
         state[:port] = config[:port]
         state[:username] = config[:username]
-        state[:password] = config[:password]
+        state[:password] = config[:password] unless config[:password].empty?
       end
     end
   end
