@@ -1,11 +1,10 @@
 # -*- encoding: utf-8 -*-
 
-require "bundler/gem_tasks"
+require 'bundler/gem_tasks'
+require 'rubocop/rake_task'
 
-require "rspec/core/rake_task"
-require "rubocop/rake_task"
 RuboCop::RakeTask.new(:style) do |task|
-  task.options << "--display-cop-names"
+  task.options << '--display-cop-names'
 end
 
-task :default => [:style]
+task default: [:style]

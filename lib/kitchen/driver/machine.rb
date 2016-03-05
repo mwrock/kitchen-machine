@@ -16,16 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require "kitchen"
-require "kitchen/driver/machine_version"
+require 'kitchen'
+require 'kitchen/driver/machine_version'
 
 module Kitchen
-
   module Driver
-
     # Machine driver for Kitchen.
     class Machine < Kitchen::Driver::Base
-
       kitchen_driver_api_version 2
 
       plugin_version Kitchen::Driver::MACHINE_VERSION

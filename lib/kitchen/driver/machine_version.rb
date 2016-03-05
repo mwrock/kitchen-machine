@@ -17,10 +17,8 @@
 # limitations under the License.
 
 module Kitchen
-
   module Driver
-
     # Version string for Machine Kitchen driver
-    MACHINE_VERSION = "0.1.0"
+    MACHINE_VERSION = '0.1.0'.freeze
   end
 end
