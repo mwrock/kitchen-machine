@@ -8,7 +8,7 @@ dist: trusty
 
 env:
   - machine_user="travis"
-  - machine_pass=""
+  - machine_pass="travis"
 
 script:
   - bundle exec rake
