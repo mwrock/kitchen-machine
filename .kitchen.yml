@@ -1,9 +1,6 @@
 ---
 driver:
-  name: proxy
-  port: 5985
-  host: localhost
-  reset_command: echo
+  name: machine
   username: <%= ENV["machine_user"] %>
   password: <%= ENV["machine_pass"] %>
 
