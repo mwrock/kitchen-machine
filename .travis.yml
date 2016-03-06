@@ -6,6 +6,9 @@ rvm:
 sudo: required
 dist: trusty
 
+before_install:
+  - sudo usermod -p "`openssl passwd -1 'travis'`" travis
+
 env:
   - machine_user="travis"
   - machine_pass="travis"
