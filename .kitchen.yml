@@ -2,7 +2,7 @@
 driver:
   name: machine
   username: <%= ENV["machine_user"] %>
-  password: <%= ENV["machine_pass"] %>
+  password: travis
 
 provisioner:
   name: chef_zero
