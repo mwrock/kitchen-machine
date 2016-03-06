@@ -15,7 +15,7 @@ env:
 
 script:
   - bundle exec rake
-  - bundle exec kitchen verify ubuntu
+  - bundle exec kitchen verify ubuntu -l debug
 
 branches:
   only:

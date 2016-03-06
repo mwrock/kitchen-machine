@@ -68,6 +68,7 @@ module Kitchen
         state[:port] = config[:port]
         state[:username] = config[:username]
         state[:password] = config[:password]
+        puts state
       end
     end
   end
