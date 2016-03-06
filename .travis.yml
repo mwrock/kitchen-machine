@@ -1,5 +1,10 @@
 language: ruby
 
+env:
+  global:
+    - machine_user=travis
+    - machine_pass=travis
+
 rvm:
   - 2.1.7
 
@@ -9,13 +14,9 @@ dist: trusty
 before_install:
   - sudo usermod -p "`openssl passwd -1 'travis'`" travis
 
-env:
-  - machine_user="travis"
-  - machine_pass="travis"
-
 script:
   - bundle exec rake
-  - bundle exec kitchen verify ubuntu -l debug
+  - bundle exec kitchen verify ubuntu
 
 branches:
   only:
