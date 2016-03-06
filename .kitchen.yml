@@ -2,7 +2,7 @@
 driver:
   name: proxy
   proxy: 5985
-  hostname: localhost
+  host: localhost
   username: <%= ENV["machine_user"] %>
   password: <%= ENV["machine_pass"] %>
 
