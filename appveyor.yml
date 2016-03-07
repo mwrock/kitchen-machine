@@ -7,6 +7,7 @@ platform:
 environment:
   machine_user: test_user
   machine_pass: Pass@word1
+  machine_port: 5985
   SSL_CERT_FILE: c:\projects\kitchen-machine\certs.pem
 
   matrix:

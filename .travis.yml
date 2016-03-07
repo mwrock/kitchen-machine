@@ -4,6 +4,7 @@ env:
   global:
     - machine_user=travis
     - machine_pass=travis
+    - machine_port=22
 
 rvm:
   - 2.1.7
